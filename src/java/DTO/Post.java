@@ -11,41 +11,51 @@ package DTO;
  */
 public class Post {
 
-    private int post_id;
+   private int post_id;
     private String post_title;
     private String post_desc;
     private String post_date;
     private int user_id;
     private int community_id;
     private String filePath;
-    
+    private String userName;
+    private String community_name;
+
     public Post() {
 
     }
-    
-    public Post(String post_title, String post_desc,int user_id , int community) {
+
+    public Post(String post_title, String post_desc, int user_id, String community_name,String file_path) {
         this.post_title = post_title;
         this.post_desc = post_desc;
-        this.user_id=user_id;
-        this.community_id=community;
-    }
-    
-    public Post(String post_title, String post_desc,int user_id , int community,String filePath){
-        this.post_title = post_title;
-        this.post_desc = post_desc;
-        this.user_id=user_id;
-        this.community_id=community;
-        this.filePath = filePath;
+        this.user_id = user_id;
+        this.community_name = community_name;
+        this.filePath=file_path;
     }
 
-    public Post(int post_id, String post_title, String post_desc, String post_date, int user_id, int community) {
+    public Post(int post_id, String post_title, String post_desc, String post_date, int user_id, int community_id, String filePath, String userName, String community_name) {
         this.post_id = post_id;
         this.post_title = post_title;
         this.post_desc = post_desc;
         this.post_date = post_date;
         this.user_id = user_id;
-        this.community_id = community;
+        this.community_id = community_id;
+        this.filePath = filePath;
+        this.userName = userName;
+        this.community_name = community_name;
     }
+    
+  
+    
+     public Post(int post_id, String post_title, String post_desc) {
+        this.post_id = post_id;
+        this.post_title = post_title;
+        this.post_desc = post_desc;
+
+    }
+    
+
+
 
     public int getPost_id() {
         return post_id;
@@ -102,13 +112,28 @@ public class Post {
     public void setFilePath(String filePath) {
         this.filePath = filePath;
     }
-    
-    
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getCommunity_name() {
+        return community_name;
+    }
+
+    public void setCommunity_name(String community_name) {
+        this.community_name = community_name;
+    }
 
     @Override
     public String toString() {
-        return "post{" + "post_id=" + post_id + ", post_title=" + post_title + ", post_desc=" + post_desc + ", post_date=" + post_date + ", user_id=" + user_id + ", community=" + community_id + '}';
+        return "Post{" + "post_id=" + post_id + ", post_title=" + post_title + ", post_desc=" + post_desc + ", post_date=" + post_date + ", user_id=" + user_id + ", community_id=" + community_id + ", filePath=" + filePath + ", userName=" + userName + ", community_name=" + community_name + '}';
     }
+
     
-    
+
 }
