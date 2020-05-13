@@ -25,23 +25,47 @@ public class DAO {
     public DAO(Connection con){
         this.con=con;
     }
-    
-     public Connection getConnection() throws SQLException {
-        String driver = "com.mysql.jdbc.Driver";
-        String url = "jdbc:mysql://localhost:3306/" + database;
-        String username = "root";
-        String password = "";
-        Connection con = null;
-        try {
-            Class.forName(driver);
-            con = DriverManager.getConnection(url, username, password);
-
-        } catch (ClassNotFoundException ex) {
-            System.out.println("Connection failed " + ex.getMessage());
-            System.exit(1);
-
+//    
+//     public Connection getConnection() throws SQLException {
+//        String driver = "com.mysql.jdbc.Driver";
+//        String url = "jdbc:mysql://localhost:3306/" + database;
+//        String username = "root";
+//        String password = "";
+//        Connection con =null;
+//        try {
+//            Class.forName(driver);
+//            con = DriverManager.getConnection(url, username, password);
+//
+//        } catch (ClassNotFoundException ex) {
+//            System.out.println("Connection failed " + ex.getMessage());
+//            System.exit(1);
+//
+//        }
+//        return con;
+//    }
+      public Connection getConnection()
+    {
+        // If there was no connection provided, make one
+        if(con == null){
+            String driver = "com.mysql.jdbc.Driver";
+            String url = "jdbc:mysql://localhost:3306/" + database;
+            String username = "root";
+            String password = "";
+            Connection tempCon = null;
+            try {
+                Class.forName(driver);
+                tempCon = DriverManager.getConnection(url, username, password);
+            } catch (ClassNotFoundException ex1) {
+                System.out.println("Failed to find driver class " + ex1.getMessage());
+                System.exit(1);
+            } catch (SQLException ex2) {
+                System.out.println("Connection failed " + ex2.getMessage());
+            }
+            return tempCon;
         }
-        return con;
+        else
+            // If there was a connection provided, use that one
+            return con;
     }
 
     public void freeConnection(Connection con) throws SQLException {

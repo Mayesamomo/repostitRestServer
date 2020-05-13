@@ -13,14 +13,12 @@ import java.util.logging.Logger;
  * @author micha
  */
 public class Community {
- private int community_id;
- private String community_name;
- private String community_desc;
- private int community_status;
- private int user_id;
 
- 
-
+    private int community_id;
+    private String community_name;
+    private String community_desc;
+    private int community_status;
+    private int user_id;
 
     public Community(int community_id, String community_name, String community_desc, int community_status, int user_id) {
         this.community_id = community_id;
@@ -28,94 +26,73 @@ public class Community {
         this.community_desc = community_desc;
         this.community_status = community_status;
         this.user_id = user_id;
-        
+
     }
-    
-    public Community(){
-        
+
+    public Community() {
+
     }
+
+    public Community(int community_id, String community_name, String community_desc, int user_id) {
+        this.community_id = community_id;
+        this.community_name = community_name;
+        this.community_desc = community_desc;
+        this.user_id = user_id;
+    }
+
     public Community(String community_name, String community_desc, int user_id) {
         this.community_name = community_name;
         this.community_desc = community_desc;
         this.user_id = user_id;
     }
-    
-    public Community(int community_id,String community_name,String community_desc){
+
+    public Community(int community_id, String community_name, String community_desc) {
         this.community_name = community_name;
         this.community_desc = community_desc;
         this.community_id = community_id;
     }
- 
 
-    
     public int getCommunity_id() {
         return community_id;
     }
-
- 
 
     public String getCommunity_name() {
         return community_name;
     }
 
- 
-
     public String getCommunity_desc() {
         return community_desc;
     }
-
- 
 
     public int getCommunity_status() {
         return community_status;
     }
 
- 
-
     public int getUser_id() {
         return user_id;
     }
-
- 
-
-    
-
- 
 
     public void setCommunity_id(int community_id) {
         this.community_id = community_id;
     }
 
- 
-
     public void setCommunity_name(String community_name) {
         this.community_name = community_name;
     }
-
- 
 
     public void setCommunity_desc(String community_desc) {
         this.community_desc = community_desc;
     }
 
- 
-
     public void setCommunity_status(int community_status) {
         this.community_status = community_status;
     }
-
- 
 
     public void setUser_id(int user_id) {
         this.user_id = user_id;
     }
 
- 
-
-   
-
- 
-
+// needed the equals and hashcode for testing
     @Override
     public int hashCode() {
         int hash = 7;
@@ -126,8 +103,6 @@ public class Community {
         hash = 97 * hash + this.user_id;
         return hash;
     }
-
- 
 
     @Override
     public boolean equals(Object obj) {
@@ -150,22 +125,16 @@ public class Community {
         if (this.user_id != other.user_id) {
             return false;
         }
-        
+
         if (!Objects.equals(this.community_name, other.community_name)) {
             return false;
         }
         return Objects.equals(this.community_desc, other.community_desc);
     }
 
- 
-
     @Override
     public String toString() {
         return "Community{" + "community_id=" + community_id + ", community_name=" + community_name + ", community_desc=" + community_desc + ", community_status=" + community_status + ", user_id=" + user_id + '}';
     }
- 
- 
- 
- 
-                            
+
 }

@@ -20,7 +20,7 @@ public class PostTesting {
     public static void main(String[] args) {
         PostDAO postDB = new PostDAO("repostit");
     
-//        System.out.println(postDB.addPostText(p));
+      System.out.println(postDB.getAllPosts());
         
 
     }
@@ -35,7 +35,9 @@ public class PostTesting {
                 flag=true;
             }
         }
-        
+          //System.out.println(flag);
         return flag;
+       
+        
     }
 }

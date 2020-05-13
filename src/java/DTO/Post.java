@@ -5,6 +5,8 @@
  */
 package DTO;
 
+import java.util.Objects;
+
 /**
  *
  * @author admin
@@ -53,7 +55,20 @@ public class Post {
         this.post_desc = post_desc;
 
     }
-    
+
+    public Post(int post_id, String post_title, String post_desc, String post_date, int user_id, int community_id, String filePath, String userName) {
+        this.post_id = post_id;
+        this.post_title = post_title;
+        this.post_desc = post_desc;
+        this.post_date = post_date;
+        this.user_id = user_id;
+        this.community_id = community_id;
+        this.filePath = filePath;
+        this.userName = userName;
+    }
+      
+
+   
 
 
 
@@ -132,6 +147,64 @@ public class Post {
     @Override
     public String toString() {
         return "Post{" + "post_id=" + post_id + ", post_title=" + post_title + ", post_desc=" + post_desc + ", post_date=" + post_date + ", user_id=" + user_id + ", community_id=" + community_id + ", filePath=" + filePath + ", userName=" + userName + ", community_name=" + community_name + '}';
+    }
+    
+    
+   // needed the equals and hashcode for testing
+    
+    
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 71 * hash + this.post_id;
+        hash = 71 * hash + Objects.hashCode(this.post_title);
+        hash = 71 * hash + Objects.hashCode(this.post_desc);
+        hash = 71 * hash + Objects.hashCode(this.post_date);
+        hash = 71 * hash + this.user_id;
+        hash = 71 * hash + this.community_id;
+        hash = 71 * hash + Objects.hashCode(this.filePath);
+        hash = 71 * hash + Objects.hashCode(this.userName);
+        hash = 71 * hash + Objects.hashCode(this.community_name);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Post other = (Post) obj;
+        if (this.post_id != other.post_id) {
+            return false;
+        }
+        if (this.user_id != other.user_id) {
+            return false;
+        }
+        if (this.community_id != other.community_id) {
+            return false;
+        }
+        if (!Objects.equals(this.post_title, other.post_title)) {
+            return false;
+        }
+        if (!Objects.equals(this.post_desc, other.post_desc)) {
+            return false;
+        }
+        if (!Objects.equals(this.post_date, other.post_date)) {
+            return false;
+        }
+        if (!Objects.equals(this.filePath, other.filePath)) {
+            return false;
+        }
+        if (!Objects.equals(this.userName, other.userName)) {
+            return false;
+        }
+        return Objects.equals(this.community_name, other.community_name);
     }
 
     

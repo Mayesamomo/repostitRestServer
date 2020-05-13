@@ -44,6 +44,16 @@ public class Comment {
 
     }
 
+    public Comment(int comment_id, String comment_text, int user_id, int post_id, String comment_date) {
+      this.comment_id = comment_id;
+        this.comment_text = comment_text;
+        this.user_id = user_id;
+        this.post_id = post_id;
+        this.comment_date = comment_date;
+    }
+
+ 
+
     public int getComment_id() {
         return comment_id;
     }
@@ -100,7 +110,7 @@ public class Comment {
     
 
   
-
+// needed the equals and hashcode for testing
     @Override
     public int hashCode() {
         int hash = 3;
@@ -131,10 +141,7 @@ public class Comment {
         if (!Objects.equals(this.comment_text, other.comment_text)) {
             return false;
         }
-        if (!Objects.equals(this.comment_date, other.comment_date)) {
-            return false;
-        }
-        return true;
+        return Objects.equals(this.comment_date, other.comment_date);
     }
 
 }

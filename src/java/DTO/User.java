@@ -116,6 +116,59 @@ public class User {
     public String toString() {
         return "User{" + "user_id=" + user_id + ", fullName=" + fullName + ", username=" + username + ", email=" + email + ", password=" + password + ", usertype=" + usertype + ", status=" + status + ", date=" + date + '}';
     }
+// needed the equals and hashcode for testing
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 97 * hash + this.user_id;
+        hash = 97 * hash + Objects.hashCode(this.fullName);
+        hash = 97 * hash + Objects.hashCode(this.username);
+        hash = 97 * hash + Objects.hashCode(this.email);
+        hash = 97 * hash + Objects.hashCode(this.password);
+        hash = 97 * hash + Objects.hashCode(this.usertype);
+        hash = 97 * hash + this.status;
+        hash = 97 * hash + Objects.hashCode(this.date);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final User other = (User) obj;
+        if (this.user_id != other.user_id) {
+            return false;
+        }
+        if (this.status != other.status) {
+            return false;
+        }
+        if (!Objects.equals(this.fullName, other.fullName)) {
+            return false;
+        }
+        if (!Objects.equals(this.username, other.username)) {
+            return false;
+        }
+        if (!Objects.equals(this.email, other.email)) {
+            return false;
+        }
+        if (!Objects.equals(this.password, other.password)) {
+            return false;
+        }
+        if (!Objects.equals(this.usertype, other.usertype)) {
+            return false;
+        }
+        if (!Objects.equals(this.date, other.date)) {
+            return false;
+        }
+        return true;
+    }
 
     
     

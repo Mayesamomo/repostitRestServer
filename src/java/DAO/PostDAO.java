@@ -41,7 +41,7 @@ public class PostDAO extends DAO implements PostDAOInterface {
             String query = "Select u.user_name,c.community_name, p.post_id, p.user_id, p.post_title, p.post_description, p.post_date, p.file_path from post p inner join user u on u.user_id = p.user_id join community c on p.community_id=c.community_id";
             ps = conn.prepareStatement(query);
             rs = ps.executeQuery();
-
+            
             // Loop through the result set
             while (rs.next()) {
                 Post p = new Post();

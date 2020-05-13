@@ -25,6 +25,10 @@ public class UserDAO extends DAO implements UserInterface {
         super(database);
     }
 
+    public UserDAO(Connection con) {
+        super(con);
+    }
+
     @Override
     public boolean register(String userName, String password, String email, String fullName) {
         Connection con = null;
