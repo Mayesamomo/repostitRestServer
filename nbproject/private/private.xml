@@ -3,10 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/micha/Documents/NetBeansProjects/repostitRestServer/src/java/DAO/UserInterface.java</file>
-            <file>file:/C:/Users/micha/Documents/NetBeansProjects/repostitRestServer/src/java/Rest/UResource.java</file>
-            <file>file:/C:/Users/micha/Documents/NetBeansProjects/repostitRestServer/src/java/Testing/LoginTest.java</file>
-            <file>file:/C:/Users/micha/Documents/NetBeansProjects/repostitRestServer/src/java/DAO/UserDAO.java</file>
+            <file>file:/C:/Users/micha/Documents/NetBeansProjects/repostitRestServer/test/DAO/CommentDAOTest.java</file>
+            <file>file:/C:/Users/micha/Documents/NetBeansProjects/repostitRestServer/test/DAO/UserDAOTest.java</file>
+            <file>file:/C:/Users/micha/Documents/NetBeansProjects/repostitRestServer/src/java/Testing/PostTesting.java</file>
+            <file>file:/C:/Users/micha/Documents/NetBeansProjects/repostitRestServer/test/Integration/CommunityDAOTest.java</file>
+            <file>file:/C:/Users/micha/Documents/NetBeansProjects/repostitRestServer/test/DAO/CommunityDAOTest.java</file>
+            <file>file:/C:/Users/micha/Documents/NetBeansProjects/repostitRestServer/test/Integration/CommentDAOTest.java</file>
         </group>
     </open-files>
 </project-private>

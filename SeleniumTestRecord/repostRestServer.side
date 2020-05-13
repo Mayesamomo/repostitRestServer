@@ -1,0 +1,36 @@
+{
+  "id": "0c075484-860b-4e85-9e31-6ff9700f2a3b",
+  "version": "2.0",
+  "name": "repostRestServer",
+  "url": "http://localhost:8080/repostitRestServer/webresources/post/getPosts",
+  "tests": [{
+    "id": "fe55934e-6f71-48dc-87fd-da4bdd166cbb",
+    "name": "Posts",
+    "commands": [{
+      "id": "99fdc29b-5a0d-4864-877d-c949b756c788",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Test",
+      "targets": [
+        ["linkText=Test", "linkText"],
+        ["css=td > .Btn1_sun4", "css:finder"],
+        ["xpath=//a[contains(text(),'Test')]", "xpath:link"],
+        ["xpath=//a[@onclick='ts.testResource()']", "xpath:attributes"],
+        ["xpath=//div[@id='testaction']/table/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Test')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "934399aa-a10c-4aad-ad65-29aae52e9df4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fe55934e-6f71-48dc-87fd-da4bdd166cbb"]
+  }],
+  "urls": ["http://localhost:8080/repostitRestServer/webresources/post/getPosts"],
+  "plugins": []
+}
