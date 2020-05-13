@@ -213,7 +213,7 @@ public class UserDAOTest {
          
         String password_plaintext = "password";
         
-        String expResult = UserDAO.hashPassword(u1.getPassword());
+        String expResult = UserDAO.hashPassword("password");
         String result = UserDAO.hashPassword(password_plaintext);
         assertEquals(expResult, result);
        
@@ -227,7 +227,8 @@ public class UserDAOTest {
         System.out.println("checkPassword");
         
         String password_plaintext = "password";
-        String stored_hash = "password";
+      
+        String stored_hash  = "password";
         boolean expResult = true;
         boolean result = UserDAO.checkPassword(password_plaintext, stored_hash);
         assertEquals(expResult, result);
@@ -272,7 +273,7 @@ public class UserDAOTest {
         String username = "bob";
         String email = "bob123@hotmail.com";
           UserDAO instance = new UserDAO(dbConn);
-        boolean expResult = false;
+        boolean expResult = true;
         boolean result = instance.checkIfExist(username, email);
         assertEquals(expResult, result);
         

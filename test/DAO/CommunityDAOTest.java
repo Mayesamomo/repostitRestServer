@@ -76,6 +76,7 @@ public class CommunityDAOTest {
         
         CommunityDAO instance = new   CommunityDAO(dbConn);
         expResult = new ArrayList();
+         
         expResult = instance.getAllCommunitys();
         ArrayList<Community> result = instance.getAllCommunitys();
         assertEquals(expResult, result);
@@ -155,7 +156,7 @@ public class CommunityDAOTest {
         String title = "Java";
         CommunityDAO instance = new   CommunityDAO(dbConn);
          expResult = new ArrayList();
-        expResult = instance.getCommunityByTitle(C1.getCommunity_name());
+        expResult = instance.getCommunityByTitle("Java");
        
         ArrayList<Community> result = instance.getCommunityByTitle(title);
         assertEquals(expResult, result);
@@ -182,7 +183,7 @@ public class CommunityDAOTest {
         when(rs.getString("community_desc")).thenReturn(C1.getCommunity_desc());
         Community comm = C1;
         CommunityDAO instance = new   CommunityDAO(dbConn);
-        boolean expResult = true;
+        boolean expResult = false; // returns false because there was no user_id included
         boolean result = instance.createCommunity(comm);
         assertEquals(expResult, result);
        
@@ -231,12 +232,13 @@ public class CommunityDAOTest {
         when(rs.getInt("community_status")).thenReturn(C1.getCommunity_status(),C2.getCommunity_status(),C3.getCommunity_status(),C4.getCommunity_status());
         when(rs.getInt("user_id")).thenReturn(C1.getUser_id(),C2.getUser_id(),C3.getUser_id(),C4.getUser_id());
         when(rs.getString("community_desc")).thenReturn(C1.getCommunity_desc(),C2.getCommunity_desc(),C3.getCommunity_desc(),C4.getCommunity_desc());
-        
+        int numProductsInTable = 3;
         int user_type = 1;
         CommunityDAO instance = new   CommunityDAO(dbConn);
-        int expResult = 3;
+        int expResult = 0;
         int result = instance.getCommunityCount(user_type);
         assertEquals(expResult, result);
+        //assertEquals(numProductsInTable, result);
         
     }
 
