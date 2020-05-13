@@ -1,0 +1,507 @@
+{
+  "id": "f6023639-59a2-46ce-8534-c6da5d048624",
+  "version": "2.0",
+  "name": "AngularRepostit",
+  "url": "http://localhost:4200",
+  "tests": [{
+    "id": "be84feff-11ca-42e6-ad21-3aca4b6f4c0d",
+    "name": "Angular Integration Testing",
+    "commands": [{
+      "id": "0f6b4bf0-7289-4079-901f-5a7fabb2ebb9",
+      "comment": "",
+      "command": "open",
+      "target": "/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85ceac4d-4ea3-46cd-aac9-cc863b75b6e4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "742x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10abfeac-247d-4c29-a315-a8a95a957400",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownBasic1",
+      "targets": [
+        ["id=dropdownBasic1", "id"],
+        ["css=#dropdownBasic1", "css:finder"],
+        ["xpath=//button[@id='dropdownBasic1']", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ec167f3-364a-48f7-b2fb-848e75f64667",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(1)",
+      "targets": [
+        ["css=.dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8833321-9aea-4466-9a97-64f4bc60f2ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex-grow-1:nth-child(1)",
+      "targets": [
+        ["css=.flex-grow-1:nth-child(1)", "css:finder"],
+        ["xpath=//div", "xpath:position"],
+        ["xpath=//div[contains(.,' REPOSTIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24e82cae-24d1-4a03-a6de-5f58f41b7bde",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reddit-text",
+      "targets": [
+        ["css=.reddit-text", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,' REPOSTIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa4bda72-324e-4714-861b-5e9e53729c6b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PostTitle",
+      "targets": [
+        ["linkText=PostTitle", "linkText"],
+        ["css=.reddit-body:nth-child(1) > .row .post-title", "css:finder"],
+        ["xpath=//a[contains(text(),'PostTitle')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/view-post/65')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PostTitle')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1660b9ac-6d09-4837-aed5-182db3e62769",
+      "comment": "",
+      "command": "click",
+      "target": "css=.post-comment .form-control",
+      "targets": [
+        ["css=.post-comment .form-control", "css:finder"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23c1952a-1aa4-405e-a869-943b1bfea8e3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group > .ng-dirty",
+      "targets": [
+        ["css=.form-group > .ng-dirty", "css:finder"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "hello"
+    }, {
+      "id": "18324e22-e833-4e2b-8ca1-8d4519b76c94",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login",
+      "targets": [
+        ["css=.login", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7784eccd-341d-4655-89c2-c0947c6acd4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reddit-text",
+      "targets": [
+        ["css=.reddit-text", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,' REPOSTIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52e4fec6-a1ec-4067-a56b-0ff89f692ee9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnCreateSubreddit",
+      "targets": [
+        ["css=.btnCreateSubreddit", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "686af03c-e750-48eb-a630-e907db1cf941",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(4)",
+      "targets": [
+        ["css=.form-control:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7503336d-f652-43ef-a7cd-97a8b9233397",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-valid",
+      "targets": [
+        ["css=.ng-valid", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div/div/form/div/input", "xpath:position"]
+      ],
+      "value": "Testing"
+    }, {
+      "id": "722061e8-1d1d-4812-83c1-35c69d6aaeba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(6)",
+      "targets": [
+        ["css=.form-control:nth-child(6)", "css:finder"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6ed57b9-9158-4070-8a2c-06f111b7a8df",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(6)",
+      "targets": [
+        ["css=.form-control:nth-child(6)", "css:finder"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "testing selenium"
+    }, {
+      "id": "9fb06479-42e2-4f31-9ecd-84c88c17bbce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnCreatePost:nth-child(1)",
+      "targets": [
+        ["css=.btnCreatePost:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c0b6582-bd13-4f14-a5b7-469d1aa32d6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reddit-body:nth-child(1) > .row .p-2:nth-child(1)",
+      "targets": [
+        ["css=.reddit-body:nth-child(1) > .row .p-2:nth-child(1)", "css:finder"],
+        ["xpath=//app-votebutton/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da27c133-bfbe-4542-9d2f-3eabd097e5a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reddit-body:nth-child(1) > .row .p-2:nth-child(1) .svg-inline--fa",
+      "targets": [
+        ["css=.reddit-body:nth-child(1) > .row .p-2:nth-child(1) .svg-inline--fa", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3deace02-cce0-4f95-aeca-b34a210e697d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reddit-body:nth-child(1) > .row .p-2:nth-child(3) .svg-inline--fa",
+      "targets": [
+        ["css=.reddit-body:nth-child(1) > .row .p-2:nth-child(3) .svg-inline--fa", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a913482-e254-4158-b34d-fea3b84e7b27",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Phones",
+      "targets": [
+        ["linkText=Phones", "linkText"],
+        ["css=span:nth-child(6) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Phones')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/view-community/Phones')]", "xpath:href"],
+        ["xpath=//span[4]/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Phones')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2ec6446-baeb-47c8-8608-452be1672c5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reddit-text",
+      "targets": [
+        ["css=.reddit-text", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,' REPOSTIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2ba1707-724f-450a-b3a8-93cc72a889f1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.reddit-text",
+      "targets": [
+        ["css=.reddit-text", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,' REPOSTIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9004e712-1c9f-4177-a828-8a5331da205f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7015b15b-2ced-4b4e-9b07-db2371e82403",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Sports"
+    }, {
+      "id": "3616d1bd-64d2-4f62-957d-0882d4b6d433",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnCreatePost:nth-child(2)",
+      "targets": [
+        ["css=.btnCreatePost:nth-child(2)", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a50692f-f2d0-497d-8eea-738a035e4637",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reddit-text",
+      "targets": [
+        ["css=.reddit-text", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,' REPOSTIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9aeb6870-f1ce-4d66-a656-4d048c9f4928",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnCreatePost:nth-child(1)",
+      "targets": [
+        ["css=.btnCreatePost:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4930885-d588-42d4-8850-ac5cc70ee60a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(3)",
+      "targets": [
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3109cde5-c7fd-4b73-8d71-16f44806f712",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-valid",
+      "targets": [
+        ["css=.ng-valid", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div/div/form/div/input", "xpath:position"]
+      ],
+      "value": "testing"
+    }, {
+      "id": "8090b200-61aa-444f-8242-e61a554d4361",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "19a8bef1-2dd4-476c-ba00-2d1ef717066f",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f42e43a-4687-4b9d-abbc-ec1db17a953c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "a988da05-cc40-4f1a-b305-403b10058d78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tox-notification__dismiss svg",
+      "targets": [
+        ["css=.tox-notification__dismiss svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "69eed70a-ea61-4ada-8b7b-2cf5b9505625",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "a72f109d-3261-4bb1-8372-c6b2281a6f3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f687e848-2d94-4d49-938b-214b42cfbe7d",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=tinymce",
+      "targets": [
+        ["id=tinymce", "id"],
+        ["css=#tinymce", "css:finder"],
+        ["xpath=//body[@id='tinymce']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"],
+        ["xpath=//body[contains(.,'testing out things with selenium')]", "xpath:innerText"]
+      ],
+      "value": "<p>testing out things with selenium</p>"
+    }, {
+      "id": "d3b955a1-02bb-4f1f-b257-2d24417764fc",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "148869f2-b4e4-48ad-826b-715864c991c7",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.float-right > .btnCreatePost",
+      "targets": [
+        ["css=.float-right > .btnCreatePost", "css:finder"],
+        ["xpath=//div[2]/button[2]", "xpath:position"]
+      ],
+      "value": "186.4000015258789,10.399993896484375"
+    }, {
+      "id": "68ae146e-772b-4d67-9edb-e7c43fb68aee",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.float-right > .btnCreatePost",
+      "targets": [
+        ["css=.float-right > .btnCreatePost", "css:finder"],
+        ["xpath=//div[2]/button[2]", "xpath:position"]
+      ],
+      "value": "186.4000015258789,10.399993896484375"
+    }, {
+      "id": "3b1cf399-0053-4b3e-bc68-d3587ea0dbd2",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.float-right > .btnCreatePost",
+      "targets": [
+        ["css=.float-right > .btnCreatePost", "css:finder"],
+        ["xpath=//div[2]/button[2]", "xpath:position"]
+      ],
+      "value": "186.4000015258789,10.399993896484375"
+    }, {
+      "id": "f2e69524-2690-4a0e-a5aa-768f931a1cd8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.float-right > .btnCreatePost",
+      "targets": [
+        ["css=.float-right > .btnCreatePost", "css:finder"],
+        ["xpath=//div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3383bce9-0748-4fd5-bafd-daba17e92388",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownBasic1",
+      "targets": [
+        ["id=dropdownBasic1", "id"],
+        ["css=#dropdownBasic1", "css:finder"],
+        ["xpath=//button[@id='dropdownBasic1']", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8e774ac-daa4-4d6d-978d-8528803d9500",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(2)",
+      "targets": [
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bf8be11-86f0-4698-a469-ff86af22402a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,300)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec341f13-d16e-400e-bd87-a1fabf22e942",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reddit-text",
+      "targets": [
+        ["css=.reddit-text", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,' REPOSTIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "96022a80-4ca9-44fe-887b-57c5c058d63a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reddit-text",
+      "targets": [
+        ["css=.reddit-text", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,' REPOSTIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "98323cd9-3c5d-4241-bce7-15a642bd9aca",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["be84feff-11ca-42e6-ad21-3aca4b6f4c0d"]
+  }],
+  "urls": ["http://localhost:4200/"],
+  "plugins": []
+}
